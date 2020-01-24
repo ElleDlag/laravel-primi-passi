@@ -51,6 +51,6 @@ class Start extends Controller
                 'year'=>'2002',
             ],
         ]; 
-        return view('cds', compact('datas'));
+        return view('pages/album', compact('datas'));
     }
 }

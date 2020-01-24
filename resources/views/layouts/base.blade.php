@@ -11,18 +11,11 @@
 
 <body>
     <div class="container">
-        @include('header')
+        @include('components.header')
         <div class="cds-container">
-            @foreach ($datas as $data)
-                <div class="{{ $data['class'] }}">
-                    <img src="{{ $data['img'] }}"/>
-                    <h3>{{ $data['title'] }}</h3>
-                    <small>{{ $data['artist'] }}</small>
-                    <strong>{{ $data['year'] }}</strong>
-                </div>
-            @endforeach
+            @yield('content')
         </div>
     </div>
 </body>
 
-</html>
+</html>php 
